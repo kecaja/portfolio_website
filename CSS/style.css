@@ -129,10 +129,7 @@ header a{
 
 }
 
-.project-item img{
-	float:left;
-	margin-right: 30px;
-}
+
 
 .project-item h3{
 	margin-top: 0;
@@ -145,15 +142,19 @@ header a{
 	background: #f05d5e;
 }
 
-.job-item{
-	display: grid;
-	grid-template-columns: 1fr 2.8fr;
-	column-gap: 20px;
-}
+
 
 /* #################  Education  #################  */
 .education{
-	background: #d8a47f;
+	background-image: url(../img/background4.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	padding-bottom: 100px;
+}
+
+.education p {
+	width: 60%;
 }
 
 /* #################  footer  #################  */
@@ -193,3 +194,19 @@ footer a{
 	width: 300px;
 	display: inline-block;
 }
+
+/* #################  Responsive  #################  */
+@media screen and (min-width: 750px){
+	.project-item img{
+		float:left;
+		margin-right: 30px;
+	}
+
+	.job-item{
+		display: grid;
+		grid-template-columns: 1fr 2.8fr;
+		column-gap: 20px;
+	}
+}
+
+
